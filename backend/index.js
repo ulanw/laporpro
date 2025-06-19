@@ -15,9 +15,9 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 // Koneksi ke database
 const db = mysql.createConnection({
   host: 'localhost',
-  user: 'root',         // ganti jika username kamu beda
-  password: '',         // ganti kalau pakai password
-  database: 'pengaduan' // pastikan sesuai dengan nama database kamu
+  user: 'laporuser',
+  password: 'password123',
+  database: 'pengaduan'
 });
 
 db.connect((err) => {
